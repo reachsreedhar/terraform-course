@@ -4,6 +4,7 @@ data "template_file" "jenkins-init" {
     DEVICE = "${var.INSTANCE_DEVICE_NAME}"
     JENKINS_VERSION = "${var.JENKINS_VERSION}"
     TERRAFORM_VERSION = "${var.TERRAFORM_VERSION}"
+    PACKER_VERSION = "${var.PACKER_VERSION}"
   }
 }
 data "template_cloudinit_config" "cloudinit-jenkins" {
